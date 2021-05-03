@@ -1,0 +1,116 @@
+/* === GLOBAL ============================================== */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}
+/* === BODY ============================================== */
+body {
+    font-family: 'PT Sans', sans-serif;
+    background: #E5E7E9; 
+}
+
+/* === section de navegação ============================================== */
+section {
+    width: min(90vw, 900px);
+    margin: -5rem auto auto auto;
+    padding: 2rem 0.5rem;
+   
+} 
+
+section .main-container {
+    text-align: center;
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:  space-evenly;
+
+}
+
+.container-choose {
+    width: 400px;
+    height: 150px;
+
+    padding: 1.5rem 2rem;
+    
+    border-radius: 0.5rem;
+    color: white;
+
+    margin: 0 0 1rem 0;
+
+
+}
+
+.container-choose:hover {
+    transform:  scale(1.01);
+}
+
+.container-choose.cadastro {
+    background:#26C6DA;
+    border: solid 0.5px #21acbe;
+}
+
+.container-choose.div-form {
+    background: #1DE9B6;
+    border: solid 0.5px #18d1a3;
+}
+
+.container-choose.div-information {
+    background: #b91de9;
+    border: solid 0.5px #a41bce;
+}  
+
+.container-choose.div-information p {
+    font-size: 0.8rem; 
+}
+
+.container-choose.div-redes {
+    background: #641de9;
+    border: solid 0.5px #5919cf;
+}
+
+.button-redes {
+    margin-top: 2rem;
+}
+
+.button-redes a img {
+    width: 40px;
+    margin: 0 1rem 0 0;
+}
+
+
+
+button.button-main-container {
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+button.button-main-container:hover {
+    border: solid 0.5px black;
+}
+
+/* ========== responsive */
+@media (max-width: 700px) {
+    html {
+        font-size: 87.5%;
+    }
+
+    header {
+        font-size: 60.5%;
+    }
+    
+}

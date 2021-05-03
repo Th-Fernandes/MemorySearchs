@@ -6,7 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./styles/header.css" />
+  <link rel="stylesheet" href="./styles/home.css">
+
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -17,133 +19,64 @@
 
 <body>
   <header>
+    <nav>
+      <a href="#">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Home_free_icon.svg"
+          alt="Retornar para a página inicial" />
+      </a>
+      <a href="#">
+        <img src="https://static.thenounproject.com/png/644753-200.png" alt="menu de navegação">
+      </a>
+    </nav>
+
+
     <h1>Memory Searchs</h1>
     <p>A sua plataforma de pesquisas mais confiável do mercado.</p>
   </header>
 
   <main>
-    <section id="container">
-      <h2>
-        Sua participação faz toda a diferença! preencha esse formulário com a
-        duração média de 5 minutos.
-      </h2>
+      <section>
+         <div class="main-container">
+             <div class="container-choose cadastro">
+                 <h2>Ja possui cadastro?</h2>
+                 <p>É rapidinho! por ele nós podemos deixar a pesquisa mais segura! :)</p>
+                 <button class="button-main-container">Clique aqui para fazer</button>
+             </div>
 
-      <form>
-        <div id="input-box">
-          <legend>01. Qual é seu sexo?</legend>
+             <div class="container-choose div-form">
+                <h2>Prencha nossos formulários</h2>
+                <p>Sua contribuição é muito importante para nos. E o melhor: você preenche rapidinho! ;)</p>
 
-          <input type="radio" name="sexo" id="sexo" />
-          <label for="sexo">Masculino</label>
-        </div>
-
-        <div id="input-box">
-          <input type="radio" name="sexo" id="sexo" />
-          <label for="sexo">Feminino</label>
-        </div>
-
-        <div id="input-box" class="input-boxidade">
-          <legend>02. Qual é a sua idade?</legend>
-
-          <input type="number" name="sexo" id="sexo" />
-          <label for="sexo">anos</label>
-        </div>
-
-        <div>
-          <legend>03. quantas horas por dia você utiliza o computador ou celular?</legend>
-
-          <input type="number" id="inputNumber" name="pcTime">
-          <label for="pcTime">Hora(s) por dia</label>
-        </div>
-
-        <div>
-          <legend>04. Marque abaixo as atividades que você realiza no celular/ computador</legend>
-
-          <div class="atividades">
-            <div class="inputAtividades">
-              <input type="checkbox" id="atividades" name="atividades" checked>
-              <label for="atividades" class="atividades">Assistir vídeos</label>
-            </div>
-
-            <div class="inputAtividades">
-              <input type="checkbox" id="atividades" name="atividades" checked>
-              <label for="atividades" class="atividades">Jogar</label>
-            </div>
-
-            <div class="inputAtividades">
-              <input type="checkbox" id="atividades" name="atividades" checked>
-              <label for="atividades">trabalhar</label>
+                <button class="button-main-container">Preencha um de nossos formulários aqui</button>
 
             </div>
 
-            <div class="inputAtividades">
-              <input type="checkbox" id="atividades" name="atividades" checked>
-              <label for="atividades">Utilizar redes sociais</label>
-            </div>
-          </div>
-          <legend>05. Quantos dias na semana vc pratica exercícios físicos? </legend>
+            <div class="container-choose div-information">
+                <h2>Quem somos?</h2>
+                <p>Somos um grupo de cientistas de dados que tem a missão de reunir  dados acerca da sociedade brasileira. Quer saber mais?</p>
 
-          <div>
-            <input type="Number" id="inputNumber" name="inputNumber">
-            <label for="inputNumber">dias por semana</label>
-          </div>
-
-          <div id="questionSection">
-            <legend>06. Você considera seu estilo de vida saudável?</legend>
-
-            <div>
-              <input type="radio" id="lifeStyle" name="lifeStyle">
-              <label for="lifeStyle">Sim</label>
+                <button class="button-main-container">Clique aqui para mais informações</button>
             </div>
 
-            <div>
-              <input type="radio" id="lifeStyle" name="lifeStyle">
-              <label for="lifeStyle">Não</label>
+            <div class="container-choose div-redes">
+                <h2>Nos sigam nas redes sociais!</h2>
+                <div class="button-redes">
+                    <a href="https://twitter.com">
+                        <img src="https://image.flaticon.com/icons/png/512/124/124021.png" alt="">
+                    </a>
+
+                    <a href="https://twitter.com">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmZydVGB4yDIa71q_SdWCJUYVZ3S7dNwqd7FjdmR2EKQWt5oc7ob9FtBL9MXVFQNw05NU&usqp=CAU" alt="">
+                    </a>
+
+                    <a href="https://twitter.com">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png" alt="">
+                    </a>
+
+                </div>
             </div>
-          </div>
-
-          <div class="work">
-            <legend>07. Você trabalha?</legend>
-
-            <div>
-              <input type="radio" id="workQuestion" name="workQuestion">
-              <label for=" workQuestion">Sim</label>
-            </div>
-
-            <div>
-              <input type="radio" id="workQuestion" name="workQuestion">
-              <label for="workQuestion">Não</label>
-            </div>
-          </div>
-
-          <div class="studies">
-
-            <legend>08. Você estuda?</legend>
-
-            <div>
-              <input type="radio" id="studiesQuestion" name="studiesQuestion">
-              <label for="studiesQuestion">Sim</label>
-            </div>
-
-            <div>
-              <input type="radio" id="studiesQuestion" name="studiesQuestion">
-              <label for="studiesQuestion">não</label>
-            </div>
-          </div>
-
-          <div class="button-submit">
-            <button id="submitForm" type="submit">Enviar formulário</button>
-          </div>
-      </form>
-    </section>
+         </div> 
+      </section>
   </main>
-
-  <div class="confirmDiv">
-    a
-  </div>
-
-  <footer></footer>
 </body>
-
-
-
 </html>

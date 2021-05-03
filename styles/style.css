@@ -26,25 +26,6 @@ width: min(90vw, 800px);
 margin: auto;
 }
 
-/* === HEADER ============================================== */
-header {
-    text-align: center;
-    padding: 2rem 0 15rem;
-    background: rgb(40, 155, 209);
-
-    width: 100%;
-}
-
-header h1,
-header p {
-    position: relative;
-    top: 120px;
-    color: white;
-}
-
-h1 {
-    font-size: 5rem;
-}
 
 
 /* === form content ============================================== */
@@ -77,6 +58,10 @@ legend {
 
 input {
     margin: 0.5rem 0 0.5rem 0.5rem;
+    border: 0;
+    background: rgb(163, 203, 248);
+
+    text-align: center;
 }
 
 #sexo, #inputNumber {
@@ -110,7 +95,7 @@ button {
     color: #fff;
     border-radius: 0.25rem;
 }
-/* === confirmDIV ============================================== */
+/* === tela de confirmação============================================== */
 .confirmDIV {
     width: 100%;
     height: 100%;
