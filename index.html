@@ -5,10 +5,10 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+  <!--EXPORTANDO CSS-->
   <link rel="stylesheet" href="./styles/header.css" />
   <link rel="stylesheet" href="./styles/home.css">
-
+  <!--IMPORTANDO FONTES DA PÁGINA-->
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -18,7 +18,7 @@
 </head>
 
 <body>
-  <header>
+  <header class="cabecalho-principal">
     <nav>
       <a href="#">
         <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Home_free_icon.svg"
@@ -29,54 +29,98 @@
       </a>
     </nav>
 
-
     <h1>Memory Searchs</h1>
     <p>A sua plataforma de pesquisas mais confiável do mercado.</p>
   </header>
 
+
   <main>
-      <section>
-         <div class="main-container">
-             <div class="container-choose cadastro">
-                 <h2>Ja possui cadastro?</h2>
-                 <p>É rapidinho! por ele nós podemos deixar a pesquisa mais segura! :)</p>
-                 <button class="button-main-container">Clique aqui para fazer</button>
-             </div>
+    <section>
+      <div class="main-container">
+        <div class="container-choose cadastro">
+          <h2>Ja possui cadastro?</h2>
+          <p>É rapidinho! por ele nós podemos deixar a pesquisa mais segura! :)</p>
+          <a href="#" onclick="Modal.open()">  
+          <button class="button-main-container">Clique aqui para fazer</button>
+        </a>
+        </div>
 
-             <div class="container-choose div-form">
-                <h2>Prencha nossos formulários</h2>
-                <p>Sua contribuição é muito importante para nos. E o melhor: você preenche rapidinho! ;)</p>
+        <div class="container-choose div-form">
+          <h2>Prencha nossos formulários</h2>
+          <p>Sua contribuição é muito importante para nos. E o melhor: você preenche rapidinho! ;)</p>
 
-                <button class="button-main-container">Preencha um de nossos formulários aqui</button>
+          <button class="button-main-container">Preencha um de nossos formulários aqui</button>
 
+        </div>
+
+        <div class="container-choose div-information">
+          <h2>Quem somos?</h2>
+          <p>Somos um grupo de cientistas de dados que tem a missão de reunir dados acerca da sociedade brasileira. Quer
+            saber mais?</p>
+
+          <a href="./information.html"><button class="button-main-container" ">Clique aqui para mais informações</button></a>
             </div>
 
-            <div class="container-choose div-information">
-                <h2>Quem somos?</h2>
-                <p>Somos um grupo de cientistas de dados que tem a missão de reunir  dados acerca da sociedade brasileira. Quer saber mais?</p>
+            <div class=" container-choose div-redes">
+              <h2>Nos sigam nas redes sociais!</h2>
+              <div class="button-redes">
+                <a href="https://twitter.com">
+                  <img src="https://image.flaticon.com/icons/png/512/124/124021.png" alt="twitter">
+                </a>
 
-                <button class="button-main-container">Clique aqui para mais informações</button>
-            </div>
+                <a href="https://facebook.com">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmZydVGB4yDIa71q_SdWCJUYVZ3S7dNwqd7FjdmR2EKQWt5oc7ob9FtBL9MXVFQNw05NU&usqp=CAU"
+                    alt="facebook">
+                </a>
 
-            <div class="container-choose div-redes">
-                <h2>Nos sigam nas redes sociais!</h2>
-                <div class="button-redes">
-                    <a href="https://twitter.com">
-                        <img src="https://image.flaticon.com/icons/png/512/124/124021.png" alt="">
-                    </a>
+                <a href="https://twitter.com">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png"
+                    alt="instagram">
+                </a>
 
-                    <a href="https://twitter.com">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmZydVGB4yDIa71q_SdWCJUYVZ3S7dNwqd7FjdmR2EKQWt5oc7ob9FtBL9MXVFQNw05NU&usqp=CAU" alt="">
-                    </a>
-
-                    <a href="https://twitter.com">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png" alt="">
-                    </a>
-
-                </div>
-            </div>
-         </div> 
-      </section>
+              </div>
+        </div>
+      </div>
+    </section>
   </main>
+  <div class="modal-overlay">
+    <div class="modal">
+      <form action="">
+        <header>
+          <h2>Cadastre-se aqui. É rápido!</h2>
+        </header>
+        <div class="input-login">
+          <aside class="first-aside">
+            <label for="name">nome</label>
+            <input type="text" id="name" name="name">
+          </aside>
+
+          <aside>
+            <label for="email">email</label>
+            <input type="email" id="email" name="email">
+          </aside>
+
+          <aside>
+            <label for="">Sua senha</label>
+            <input type="password">
+          </aside>
+
+          <div class="submit">
+            <button class="cancel-button" onclick="Modal.close()"> Cancelar</button>
+            <button type="submit">Cadastrar</button>
+            
+          </div>
+          
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="./scripts.js">
+
+  </script>
 </body>
+
 </html>
