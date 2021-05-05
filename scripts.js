@@ -12,3 +12,18 @@ const Modal = {
       .remove('active')
     }
   }
+
+  const options = {
+    selecioned() {
+      document.querySelector('.options')
+      .classList
+      .add('activeded')
+
+    },
+
+    unselecioned() {
+      document.querySelector('.options')
+      .classList
+      .remove('activeded')
+    }
+  }

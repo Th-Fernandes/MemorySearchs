@@ -18,13 +18,13 @@
 </head>
 
 <body>
-  <header class="cabecalho-principal">
+  <header  class="cabecalho-principal">
     <nav>
-      <a href="#">
+      <a href="./index.html">
         <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Home_free_icon.svg"
           alt="Retornar para a página inicial" />
       </a>
-      <a href="#">
+      <a href="#" onclick="options.selecioned()"  >
         <img src="https://static.thenounproject.com/png/644753-200.png" alt="menu de navegação">
       </a>
     </nav>
@@ -34,7 +34,7 @@
   </header>
 
 
-  <main>
+  <main onclick="options.unselecioned()">
     <section>
       <div class="main-container">
         <div class="container-choose cadastro">
@@ -85,7 +85,9 @@
       </div>
     </section>
   </main>
-  <div class="modal-overlay">
+
+  <!--PARTE INTERATIVA // REGISTRO DE USUÁRIO-->
+  <div class="modal-overlay ">
     <div class="modal">
       <form action="">
         <header>
@@ -118,6 +120,14 @@
     </div>
   </div>
 
+ 
+    <div class="options" id="options">
+      <a href="#" onclick="Modal.open()">Criar sua conta / Login</a>
+      <a href="#">Formulários preenchidos</a>
+      <a href="#">Trocar MS coins por Real</a>
+      <a href="#"> Voltar para a Home </a>
+    </div>
+ 
   <script src="./scripts.js">
 
   </script>
