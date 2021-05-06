@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500&display=swap" rel="stylesheet">
 
-  <title>Memory Searchs</title>
+  <title>Memory Searchs - plataforma de formulários</title>
 </head>
 
 <body>
@@ -24,13 +24,20 @@
         <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Home_free_icon.svg"
           alt="Retornar para a página inicial" />
       </a>
-      <a href="#" onclick="options.selecioned()"  >
+      <a  href="#" onclick="options.selecioned()"  >
         <img src="https://static.thenounproject.com/png/644753-200.png" alt="menu de navegação">
       </a>
     </nav>
 
     <h1>Memory Searchs</h1>
     <p>A sua plataforma de pesquisas mais confiável do mercado.</p>
+
+    <div class="options" id="options">
+      <a href="#" onclick="Modal.open()">Criar sua conta / Login</a>
+      <a href="#">Formulários preenchidos</a>
+      <a href="#">Trocar MS coins por Real</a>
+      <a href="#"> Voltar para a Home </a>
+    </div>
   </header>
 
 
@@ -49,8 +56,9 @@
           <h2>Prencha nossos formulários</h2>
           <p>Sua contribuição é muito importante para nos. E o melhor: você preenche rapidinho! ;)</p>
 
-          <button class="button-main-container">Preencha um de nossos formulários aqui</button>
-
+          <a href="./generalforms.html">
+           <button class="button-main-container">Preencha um de nossos formulários aqui</button>
+          </a> 
         </div>
 
         <div class="container-choose div-information">
@@ -120,15 +128,10 @@
     </div>
   </div>
 
+ <!--botão interativo no header-->
+
  
-    <div class="options" id="options">
-      <a href="#" onclick="Modal.open()">Criar sua conta / Login</a>
-      <a href="#">Formulários preenchidos</a>
-      <a href="#">Trocar MS coins por Real</a>
-      <a href="#"> Voltar para a Home </a>
-    </div>
- 
-  <script src="./scripts.js">
+  <script src="./scripts/scripts.js">
 
   </script>
 </body>

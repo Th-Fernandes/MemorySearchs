@@ -1,4 +1,5 @@
-const Modal = {
+
+  const Modal = {
     open(){
       document
       .querySelector('.modal-overlay')
@@ -27,3 +28,5 @@ const Modal = {
       .remove('activeded')
     }
   }
+
+

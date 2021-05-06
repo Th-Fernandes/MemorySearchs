@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" >
 
 <head>
   <meta charset="UTF-8" />
@@ -8,6 +8,7 @@
 
   <link rel="stylesheet" href="./styles/style.css" />
   <link rel="stylesheet" href="./styles/header.css" />
+  <link rel="stylesheet" href="./styles/home.css">
 
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet" />
@@ -18,23 +19,11 @@
 </head>
 
 <body>
-  <header class="cabecalho-principal">
-    <nav>
-      <a href="./index.html">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Home_free_icon.svg"
-          alt="Retornar para a página inicial" />
-      </a>
-      <a href="#">
-        <img src="https://static.thenounproject.com/png/644753-200.png" alt="menu de navegação">
-      </a>
-    </nav>
+  <header class="cabecalho-principal" id="header">
 
-
-    <h1>Memory Searchs</h1>
-    <p>A sua plataforma de pesquisas mais confiável do mercado.</p>
   </header>
 
-  <main>
+  <main onclick="options.unselecioned()">
     <section id="container">
       <h2>
         Sua participação faz toda a diferença! preencha esse formulário com a
@@ -155,6 +144,9 @@
   </div>
 
   <footer></footer>
+
+  <script src="./scripts/scripts.js"></script>
+  <script src="./scripts/header.js"></script>
 </body>
 
 
