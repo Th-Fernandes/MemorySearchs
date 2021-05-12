@@ -18,13 +18,13 @@
 </head>
 
 <body>
-  <header  class="cabecalho-principal">
+  <header class="cabecalho-principal">
     <nav>
       <a href="./index.html">
         <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Home_free_icon.svg"
           alt="Retornar para a página inicial" />
       </a>
-      <a  href="#" onclick="options.selecioned()"  >
+      <a href="#" onclick="options.selecioned()">
         <img src="https://static.thenounproject.com/png/644753-200.png" alt="menu de navegação">
       </a>
     </nav>
@@ -36,7 +36,7 @@
       <a href="#" onclick="Modal.open()">Criar sua conta / Login</a>
       <a href="#">Formulários preenchidos</a>
       <a href="#">Trocar MS coins por Real</a>
-      <a href="#"> Voltar para a Home </a>
+      <a href="./index.html"> Voltar para a Home </a>
     </div>
   </header>
 
@@ -47,9 +47,9 @@
         <div class="container-choose cadastro">
           <h2>Ja possui cadastro?</h2>
           <p>É rapidinho! por ele nós podemos deixar a pesquisa mais segura! :)</p>
-          <a href="#" onclick="Modal.open()">  
-          <button class="button-main-container">Clique aqui para fazer</button>
-        </a>
+          <a href="#" onclick="Modal.open()">
+            <button class="button-main-container">Clique aqui para fazer</button>
+          </a>
         </div>
 
         <div class="container-choose div-form">
@@ -57,8 +57,8 @@
           <p>Sua contribuição é muito importante para nos. E o melhor: você preenche rapidinho! ;)</p>
 
           <a href="./generalforms.html">
-           <button class="button-main-container">Preencha um de nossos formulários aqui</button>
-          </a> 
+            <button class="button-main-container">Preencha um de nossos formulários aqui</button>
+          </a>
         </div>
 
         <div class="container-choose div-information">
@@ -92,6 +92,35 @@
         </div>
       </div>
     </section>
+
+    <section class="aboutUs">
+      <div class="text-about">
+        <H2>Sobre nós</H2>
+        <p>A Memory Searchs nasceu de uma iniciativa de universitários da UFRJ. Fundada em 2017, nosso principal
+          objetivo é democratizar e facilitar a coleta de dados de forma segura e confiável</p>
+      </div>
+
+      <div class="text-about">
+        <h2>Nossa missão</h2>
+        <p>Nosso principal objetivo é contribuir com o mercado de pesquisa brasileiro, tornando-o o mais transparente
+          possível e de fácil acesso para toda a população, indepente da idade.</p>
+      </div>
+      <div class="text-about">
+        <h2>E como fazemos isso?</h2>
+        <p>Simples. Fazemos formulários da forma mais simples e entendível possível, com o menor número de ambiguidade
+          possível. Aliado a isso, temos nosso sistema de recompensas, onde nossos participantes conseguem trocar seus
+          formulários preenchidos por dinheiro real!</p>
+
+        <div class="test">
+
+          <a href="./generalforms.html">
+            <button>
+              Comece agora a preencher um de nossos formulários!
+            </button>
+          </a>
+        </div>
+      </div>
+    </section>
   </main>
 
   <!--PARTE INTERATIVA // REGISTRO DE USUÁRIO-->
@@ -120,17 +149,17 @@
           <div class="submit">
             <button class="cancel-button" onclick="Modal.close()"> Cancelar</button>
             <button type="submit">Cadastrar</button>
-            
+
           </div>
-          
+
         </div>
       </form>
     </div>
   </div>
 
- <!--botão interativo no header-->
+  <!--botão interativo no header-->
 
- 
+
   <script src="./scripts/scripts.js">
 
   </script>

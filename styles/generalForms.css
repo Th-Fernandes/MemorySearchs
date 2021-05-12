@@ -1,0 +1,29 @@
+section:hover {
+    transform:  scale(1.03);
+}
+
+section a {
+    text-decoration: none;
+}
+
+.main-div {
+    border: solid 3px #000;
+  
+    text-align: center;
+    margin-top: 0.1rem;
+    margin-bottom: 0.5rem;
+    
+}
+
+.main-div.sports {
+    border-color: orange;
+}
+
+.main-div.tech {
+    border-color: #BA55D3;
+}
+
+
+.form-option img {
+    width: 2.5rem;
+}

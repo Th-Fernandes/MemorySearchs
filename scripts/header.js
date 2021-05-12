@@ -1,4 +1,6 @@
-var header =  document.getElementById('header');
+
+
+const header =  document.getElementById('header');
 header.innerHTML = `     <nav>
 <a href="./index.html">
   <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Home_free_icon.svg"
@@ -16,6 +18,6 @@ header.innerHTML = `     <nav>
 <a href="#" onclick="Modal.open()">Criar sua conta / Login</a>
 <a href="#">Formulários preenchidos</a>
 <a href="#">Trocar MS coins por Real</a>
-<a href="#"> Voltar para a Home </a>
+<a href="./index.html"> Voltar para a Home </a>
 </div>
 `

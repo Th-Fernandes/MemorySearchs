@@ -113,6 +113,8 @@ body {
  visibility: hidden;
  opacity: 0;
  z-index: 999;
+
+
 }
 
 .options.activeded {
@@ -127,10 +129,11 @@ body {
 }
 
 .options a:hover {
-    border: 1px solid black;
+    border: 0.5px solid black;
+    
 }
 
-/* === section de navegação ============================================== */
+/* === section de navegação principal ============================================== */
 section {
     width: min(90vw, 900px);
     margin: -5rem auto auto auto;
@@ -212,7 +215,33 @@ button.button-main-container {
 button.button-main-container:hover {
     border: solid 0.5px black;
 }
+/* =========== section sobre nós ===================== */
+section.aboutUs {
+    margin-top: 1rem;
+}
 
+.aboutUs h2 {
+    margin: 0.5rem 0;
+}
+
+.aboutUs a {
+    text-decoration: none;
+    
+}
+
+.text-about a button {
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+}
+
+.test {
+    display: flex;
+    justify-content: center;
+}
 /* ========== responsive */
 @media (max-width: 700px) {
     html {
