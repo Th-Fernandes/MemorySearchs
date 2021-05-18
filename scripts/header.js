@@ -1,5 +1,3 @@
-
-
 const header =  document.getElementById('header');
 header.innerHTML = `     <nav>
 <a href="./index.html">

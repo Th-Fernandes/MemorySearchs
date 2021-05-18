@@ -1,4 +1,3 @@
-
   const Modal = {
     open(){
       document
@@ -30,6 +29,5 @@
   }
 
 
-  // pegar o elemento q tenha a .modal-overlay
-  // adicionar o html para o cadastro funcionar 
+  // parte de cadastro - botão de registro
   

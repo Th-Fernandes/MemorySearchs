@@ -218,10 +218,29 @@ button.button-main-container:hover {
 /* =========== section sobre nós ===================== */
 section.aboutUs {
     margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    background: rgb(241, 241, 241);
 }
 
-.aboutUs h2 {
-    margin: 0.5rem 0;
+.text-about {
+    margin: 0 1rem;
+}
+
+.text-about p {
+    margin: 1rem 0;
+
+    font-size: 1.1rem;
+}
+
+.text-about h2 {
+    
+    font-size: 2.5rem;
+    
+    color: white;
+    background: rgb(54, 144, 172);
+
+    display: inline;
 }
 
 .aboutUs a {
