@@ -1,0 +1,99 @@
+/* === GLOBAL ============================================== */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+    
+
+/* ==== SECTION da parte de troca === */
+section.trades {
+   
+    text-align: center;
+    padding: 0;
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.trades .tradeCards {
+    width: 100%;
+    height: 18rem;
+
+    color: #fff;
+    border-radius: 5px;
+
+    margin: 0 6px;
+}
+
+.tradeCards.mscoins {
+    background: orange;
+}
+
+.tradeCards.trueMoney {
+    background: rgb(16, 235, 89);
+}
+
+
+.tradeCards h2,
+.tradeCards p {
+    margin: 3rem 0 3rem 0;
+}
+
+.tradeCards h2 {
+    font-size: 2rem;
+}
+
+.tradeCards p {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+small {
+    display: block;
+    text-align: center;
+
+    margin-top: 1rem;
+}
+
+/* ==== section de: preencha novos formulários: ==== */
+section.newForms {
+    text-align: center;
+    margin-top: 20px;
+
+    background: rgb(151, 137, 231);
+    border-radius: 5px;
+    color: white;
+}
+
+section.newForms h2,
+section.newForms a {
+    margin: 0 0 20px 0;
+}
+
+a button {
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+a button:hover {
+    background:rgb(199, 199, 199);
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 700px) {
+    section.trades {
+        flex-wrap: wrap;
+    }
+
+    .trades .tradeCards {
+        margin-top: 8px;
+    }
+}

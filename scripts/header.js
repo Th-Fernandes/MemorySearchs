@@ -15,7 +15,7 @@ header.innerHTML = `     <nav>
 <div class="options" id="options">
 <a href="#" onclick="Modal.open()">Criar sua conta / Login</a>
 <a href="#">Formulários preenchidos</a>
-<a href="#">Trocar MS coins por Real</a>
+<a href="./MScoins.html">Trocar MS coins por dinheiro</a>
 <a href="./index.html"> Voltar para a Home </a>
 </div>
 `
