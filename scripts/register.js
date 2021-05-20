@@ -1,3 +1,10 @@
+document.write(`
+<!--PARTE INTERATIVA // REGISTRO DE USUÁRIO-->
+<div class="modal-overlay" id="modal-overlay">
+
+</div>
+`)
+
 const test = document.getElementById('modal-overlay');
 test.innerHTML = `
 <div class="modal">
@@ -31,3 +38,4 @@ test.innerHTML = `
 </form>
 </div>
 `
+

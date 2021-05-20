@@ -5,17 +5,20 @@
     box-sizing: border-box;
 }
 
-    
+    section {
+        /*border: solid 0.5px black; */
+        margin-top: 0.1rem;
+    }
 
 /* ==== SECTION da parte de troca === */
-section.trades {
-   
+.trades {
     text-align: center;
     padding: 0;
-    margin-top: 20px;
 
     display: flex;
     justify-content: space-between;
+
+    
     
 }
 
@@ -56,23 +59,21 @@ small {
     display: block;
     text-align: center;
 
-    margin-top: 1rem;
+    margin-top: 0.2rem;
 }
 
 /* ==== section de: preencha novos formulários: ==== */
-section.newForms {
+.newForms {
     text-align: center;
     margin-top: 20px;
+    padding: 0.5rem  0;
 
     background: rgb(151, 137, 231);
     border-radius: 5px;
     color: white;
 }
 
-section.newForms h2,
-section.newForms a {
-    margin: 0 0 20px 0;
-}
+
 
 a button {
     margin-top: 0.5rem;
@@ -86,14 +87,97 @@ a button {
 a button:hover {
     background:rgb(199, 199, 199);
 }
+/* === SECTION DE FORMULARIO PREENCHIDO === */
+.formPreenchidos h2 {
+    font-size: 3rem;    
+    text-align: center;
 
+    background: rgb(95, 92, 250);
+    color: white;
+    margin-bottom: 0.6rem;
+}
+
+div.squareFormGroup {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+
+    max-height: 600px;
+
+    overflow-y: auto;
+
+    text-align: center;
+}
+
+div.squareFormGroup .squareForm {
+    width: 33%;
+    height: 15rem;
+
+   border-radius: 15px;;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.squareForm.sports {
+    border: 5px solid orange;
+}
+
+.squareForm.tech {
+    border: 5px solid rgb(85, 26, 139);
+}
+.squareForm.polite {
+    border: 5px solid black;
+}
+.squareForm h3 {
+    font-size: 1.5rem;
+}
+
+/* === BOTÃO DE INTERROGAÇÃO === */
+.coinExplanation img {
+    position: fixed;
+    top: 500px;
+    right: 10px;
+}
+.coinExplanation button:hover {
+    cursor: pointer;
+}
+
+.information{
+    width: 550px;
+    top: 490px;
+    right: 110px;
+    position: fixed;
+
+    background: #fff;
+    border: 1px solid black;
+}
+
+
+img {
+    width: 5rem;
+}
 /* === RESPONSIVE === */
 @media (max-width: 700px) {
-    section.trades {
+    .trades {
         flex-wrap: wrap;
     }
 
     .trades .tradeCards {
         margin-top: 8px;
     }
+
+    .formPreenchidos h2 {
+        
+        font-size: 2.5rem;
+    }
+    div.squareFormGroup .squareForm {
+        width: 100%;
+        height: 10rem;
+    }
+
 }

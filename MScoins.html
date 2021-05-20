@@ -21,7 +21,9 @@
     </header>
 
     <main>
-        <section class="trades">
+
+    <section>
+        <div class="trades">
             <div class="tradeCards mscoins">
                 <h2>Sua quantidade de MScoins:</h2>
                 <p> M$ 2000</p>
@@ -33,21 +35,80 @@
                 <p>R$ 20,00</p>
             </div>
 
-        </section>
+        </div>
 
-        <small>Lembrando que: a cada 100 MScoins, você pode troca-los por R$01,00</small>
+        <small>Lembrando que: a cada 100 MScoins, você pode troca-los por R$01</small>
+        
+        <div class="newForms">
+            <h2>Tá querendo juntar mais MScoins? preencha um de nossos formulários e acumule pontos agora mesmo!</h2>
+    
+            <a href="./generalforms.html">
+              <button>Preencha formulários aqui</button>
+            </a>
+        </div>
+    </section>
+
+    <section class="formPreenchidos">
+
+        <h2>Formulários que você preencheu</h2>
+
+        <div class="squareFormGroup ">
+
+            <div class="squareForm sports">
+                <h3>Título do formulário</h3>
+                <img src="https://cdn.pixabay.com/photo/2013/07/12/15/35/basketball-150145__340.png"
+                alt="basketball icon">
+                <p>status: 100% concluído</p>
+            </div>
+
+            <div class="squareForm tech">
+                <h3>Título do formulário</h3>
+                <img src="https://cdn.pixabay.com/photo/2018/05/17/00/21/computer-3407491_1280.png" alt="">
+                <p>status: 63% concluído</p>
+            </div>
+
+            <div class="squareForm polite">
+                <h3>Título do formulário</h3>
+                <img src="https://image.flaticon.com/icons/png/512/1781/1781225.png" alt="polite icon">
+                <p>status: 20% concluído</p>
+            </div>
+
+
+
+
+
+        </div>
+    </section>
     </main>
 
+    <div class="coinExplanation">
+        <button onclick="abrir()">
+            <img src="https://i.pinimg.com/originals/90/15/b7/9015b7ac1e79c4af4b400edc54a9c5d8.png" alt="">
+         </button>
 
-    <section class="newForms">
-        <h2>Tá querendo juntar mais MScoins? preencha um de nossos formulários e acumule pontos agora mesmo!</h2>
+    </div>
 
-        <a href="./generalforms.html">
-          <button>Preencha formulários aqui</button>
-        </a>
-    </section>
+    <div class="information "   >
+        <p> • Você consegue juntar MScoins preenchendo formulários da plataforma. Cada formulário proporciona uma quantidade de recompensa diferente (a informação vem no próprio formulário</p>
+        <p>• A cada 100MScoins, você tem o equivalente a 1 real. Você pode retirar o dinheiro assim que reunir pelo menos 2000 MScoins (equivalente a 20 reais)</p>
+    </div>
+
+    
+
+    
     
     <script src="./scripts/scripts.js"></script>
     <script src="./scripts/header.js"></script>
+    <script src="register.js"></script>
+    <script>
+        const info = {
+            abrir() {
+                document
+                .getElementById('information')
+                .classList
+                .add('a')
+            }
+        }
+    </script>
 </body>
 </html>
