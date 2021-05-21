@@ -17,7 +17,7 @@ input[type=number] {
 /* === HEADER ============================================== */
  header.cabecalho-principal {
     text-align: center;
-    padding: 2rem 0 10rem;
+    padding: 2rem 0 6rem;
     background: rgb(40, 155, 209);
 
     width: 100%;
@@ -25,14 +25,18 @@ input[type=number] {
 
 header.cabecalho-principal h1,
 header.cabecalho-principal p {
-    position: relative;
-    top: 80px;
     color: white;
+    display: block;
 }
 
 h1 {
-    font-size: 5rem;
+    font-size: 6rem;
 }
+
+header.cabecalho-principal p {
+    font-size: 1.2rem;
+}
+
 
 nav {
     display: flex;
@@ -43,4 +47,46 @@ nav a img {
     width: 2.5rem;
     margin: 0 1rem 1rem 1rem;;
 }
+/* === BOTÃO DE OPÇÕES NO HEADER  ============================================== */
 
+
+.options {
+    position: absolute;
+    bottom: 82%;
+    left: 76.5%;
+   
+    width: 20vw;
+    max-height: 400px;
+    text-align: center;
+   
+    background: white;
+    border: 0.25px solid black;
+   
+    visibility: hidden;
+    opacity: 0;
+    z-index: 999;
+   
+   
+   }
+   
+   .options.activeded {
+       opacity: 1;
+       visibility: visible;
+   }
+   
+   .options a {
+       display: block;
+       padding: 0.5rem 0;
+       text-decoration: none;
+   }
+   
+   .options a:hover {
+       border: 0.5px solid black;
+       
+   }
+
+   @media (max-width: 700px) {
+       header.cabecalho-principal {
+        height: 10%;
+       }
+   }

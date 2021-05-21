@@ -8,6 +8,7 @@
   <!--EXPORTANDO CSS-->
   <link rel="stylesheet" href="./styles/header.css" />
   <link rel="stylesheet" href="./styles/home.css">
+  <link rel="stylesheet" href="./styles/register.css">
   <!--IMPORTANDO FONTES DA PÁGINA-->
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet" />
@@ -18,31 +19,13 @@
 </head>
 
 <body>
-  <header class="cabecalho-principal">
-    <nav>
-      <a href="./index.html">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Home_free_icon.svg"
-          alt="Retornar para a página inicial" />
-      </a>
-      <a href="#" onclick="options.selecioned()">
-        <img src="https://static.thenounproject.com/png/644753-200.png" alt="menu de navegação">
-      </a>
-    </nav>
-
-    <h1>Memory Searchs</h1>
-    <p>A sua plataforma de pesquisas mais confiável do mercado.</p>
-
-    <div class="options" id="options">
-      <a href="#" onclick="Modal.open()">Criar sua conta / Login</a>
-      <a href="#">Formulários preenchidos</a>
-      <a href="./MScoins.html">Trocar MS coins por dinheiro</a>
-      <a href="./index.html"> Voltar para a Home </a>
-    </div>
+  <header class="cabecalho-principal" id="header">
+    <!--CONTEUDO SE ENCONTRA EM: ./scripts/header.js-->
   </header>
 
 
   <main onclick="options.unselecioned()">
-    <section>
+    <section> <!-- SESSÃO PRINCIPAL: CARDS-->
       <div class="main-container">
         <div class="container-choose cadastro">
           <h2>Ja possui cadastro?</h2>
@@ -66,7 +49,7 @@
           <p>Somos um grupo de cientistas de dados que tem a missão de reunir dados acerca da sociedade brasileira. Quer
             saber mais?</p>
 
-          <button id="interactive-information-button" class="button-main-container" onclick="informations.click()">Clique aqui para mais informações</button>
+          <button class="button-main-container" id="interactive-information-button"  onclick="informations.click()">Clique aqui para mais informações</button>
             </div>
 
             <div class=" container-choose div-redes">
@@ -113,6 +96,7 @@
   <script src="./scripts/scripts.js"></script>
   <script src="./scripts/homeInformation.js"></script>
   <script src="./scripts/register.js"></script>
+  <script src="./scripts/header.js"> </script>
 
 </body>
 

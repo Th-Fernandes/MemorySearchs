@@ -9,12 +9,15 @@ header.innerHTML = `     <nav>
 </a>
 </nav>
 
+
 <h1>Memory Searchs</h1>
 <p>A sua plataforma de pesquisas mais confiável do mercado.</p>
 
+
+
 <div class="options" id="options">
 <a href="#" onclick="Modal.open()">Criar sua conta / Login</a>
-<a href="#">Formulários preenchidos</a>
+<a href="./MScoins.html">Formulários preenchidos</a>
 <a href="./MScoins.html">Trocar MS coins por dinheiro</a>
 <a href="./index.html"> Voltar para a Home </a>
 </div>
