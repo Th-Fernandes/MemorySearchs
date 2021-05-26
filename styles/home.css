@@ -15,17 +15,38 @@ input[type=number] {
 
 }
 
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+
+body::-webkit-scrollbar-thumb:hover {
+    background: rgb(238, 212, 165);
+}
+  
+  body::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);        /* color of the tracking area */
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+   border: 0.5px solid #000;
+  }
+
 /* === BODY ============================================== */
 body {
     font-family: 'PT Sans', sans-serif;
     background: #E5E7E9; 
 }
 
+body.darkTheme {
+    background: #282726;
+}
+
 /* === section de navegação principal ============================================== */
 section {
     width: min(90vw, 900px);
-    margin: -5rem auto auto auto;
-    padding: 2rem 0.5rem;
+    margin: -5rem auto 0px auto;
 } 
 
 section .main-container {
@@ -87,6 +108,27 @@ section .main-container {
     background: #641de9;
     border: solid 3px #5919cf;
 }
+/*======== estilização dos cards 1 por 1  VERSAO DARK THEME==*/
+
+.container-choose.cadastro.dark {
+    background:#fb8c6f;
+    border: solid 2px black ;
+}
+
+.container-choose.div-form.dark {
+    background: #F3607D ;
+    border: solid 2px  #000;
+}
+
+.container-choose.div-information.dark {
+    background: #c1b9ae;
+    border: solid 2px #000 ;
+}  
+
+.container-choose.div-redes.dark {
+    background: #FDC664 ;
+    border: solid 2px #000 ;
+}
 /* ======= card de redes sociais (links para as redes ===*/
 .button-redes {
     margin-top: 2rem;
@@ -101,6 +143,74 @@ section .main-container {
 .container-choose button:hover {
     border: solid 0.5px black;
 }
+/* =========== section Escolha um form pra preencher ===================== */
+section.chooseForm {
+    margin: auto; 
+    margin-bottom: 5rem;
+}
+
+section.chooseForm header h2 {
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+
+}
+section.chooseForm header {
+    display: flex;
+    align-items: center;
+    justify-content: left; 
+    flex-direction: column;
+}
+
+section.chooseForm header  img{
+    width: 10rem;
+    margin-bottom: 4rem;
+}
+
+section.chooseForm div {
+    padding: 0.7rem 0;
+    margin-top: 1rem;
+}
+
+section.chooseForm div:hover {
+    transform:  scale(1.1);
+}
+
+.chooseForm a {
+    text-decoration: none;
+    color: white;
+}
+
+.main-div {
+    border: solid 3px #000;
+  
+    text-align: center;
+    margin-top: 0.1rem;
+    margin-bottom: 2rem;
+    
+}
+
+.main-div.sports {
+    background: #FB836B;
+    border-color: rgb(156, 107, 17);
+}
+
+.main-div.tech {
+    background: #7F6698;
+    border-color: #584769;
+}
+
+.main-div.polite {
+    background: #17395c;
+}
+
+
+.form-option img {
+    width: 2.5rem;
+}
+
+
+
 /* =========== section sobre nós ===================== */
 section.aboutUs {
     margin-top: 1rem;

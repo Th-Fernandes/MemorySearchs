@@ -30,9 +30,11 @@ test.innerHTML = `
 
     <div class="submit">
       <button class="cancel-button" onclick="Modal.close()"> Cancelar</button>
+      
       <button type="submit">Cadastrar</button>
-
     </div>
+
+    <button class="login"> possui login? clique aqui!</button>
 
   </div>
 </form>

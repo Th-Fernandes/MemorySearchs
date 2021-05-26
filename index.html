@@ -18,16 +18,18 @@
   <title>Memory Searchs - plataforma de formulários</title>
 </head>
 
-<body>
-  <header class="cabecalho-principal" id="header">
+<body class="darkTheme">
+  <header class="cabecalho-principal darkTheme" id="header">
     <!--CONTEUDO SE ENCONTRA EM: ./scripts/header.js-->
+
+    
   </header>
 
 
   <main onclick="options.unselecioned()">
     <section> <!-- SESSÃO PRINCIPAL: CARDS-->
       <div class="main-container">
-        <div class="container-choose cadastro">
+        <div class="container-choose cadastro dark">
           <h2>Ja possui cadastro?</h2>
           <p>É rapidinho! por ele nós podemos deixar a pesquisa mais segura! :)</p>
           <a href="#" onclick="Modal.open()">
@@ -35,7 +37,7 @@
           </a>
         </div>
 
-        <div class="container-choose div-form">
+        <div class="container-choose div-form dark">
           <h2>Prencha nossos formulários</h2>
           <p>Sua contribuição é muito importante para nos. E o melhor: você preenche rapidinho! ;)</p>
 
@@ -44,7 +46,7 @@
           </a>
         </div>
 
-        <div class="container-choose div-information">
+        <div class="container-choose div-information dark">
           <h2>Quem somos?</h2>
           <p>Somos um grupo de cientistas de dados que tem a missão de reunir dados acerca da sociedade brasileira. Quer
             saber mais?</p>
@@ -52,7 +54,7 @@
           <button class="button-main-container" id="interactive-information-button"  onclick="informations.click()">Clique aqui para mais informações</button>
             </div>
 
-            <div class=" container-choose div-redes">
+            <div class=" container-choose div-redes dark">
               <h2>Nos sigam nas redes sociais!</h2>
               <div class="button-redes">
                 <a href="https://twitter.com">
@@ -76,9 +78,68 @@
       </div>
     </section>
 
+    <section class="chooseForm">
+      <header>
+      <img src="https://image.flaticon.com/icons/png/512/51/51506.png" alt="">
+      <h2>Que tal preencher um dos nosso formulários? ;)</h2>
+    </header>
+    
+      <div class="main-div sports">
+        <!-- sessão com os botões que levam as pessoas para preencher algum formulário-->
+        <a href="#">
+          <div class="form-option">
+            <img
+              src="https://cdn.pixabay.com/photo/2013/07/12/15/35/basketball-150145__340.png"
+              alt="basketball icon"
+            />
+
+            <h2>Você pratica atividades físicas regularmente?</h2>
+            <p>
+              Preencha formulários sobre esporte para contribuir com a
+              pesquisa nacional acerca do hábito dos brasileiros.
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <div class="main-div tech">
+        <a href="./form.html">
+          <div class="form-option">
+            <img
+              src="https://cdn.pixabay.com/photo/2018/05/17/00/21/computer-3407491_1280.png"
+              alt=""
+            />
+
+            <h2>Conte-nos mais sobre sua rotina com a tecnologia.</h2>
+            <p>
+              Responder a pesquisa desse tema auxiliará a desenvolvedores a
+              criar aplicativos moldados de acordo com a rotina dos
+              brasileiros.
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <div class="main-div polite">
+        <a href="#">
+          <div class="form-option">
+            <img
+              src="https://image.flaticon.com/icons/png/512/1781/1781225.png"
+              alt="polite icon"
+            />
+
+            <h2>Você se considera uma pessoa de opinião formada?</h2>
+            <p>
+              Responda formulários sobre posicionamentos políticos para melhor
+              analisarmos a forma de pensamento do povo brasileiro.
+            </p>
+          </div>
+        </a>
+      </div>
+    </section>
 
 
-
+      <!-- sessão onde ficam as informações da empresa-->
       <section id ="aboutUs" class="aboutUs">
         <!-- você pode acessar o conteúdo pelo arquivo: homeInformation.js-->
       </section>

@@ -23,6 +23,10 @@ input[type=number] {
     width: 100%;
 }
 
+header.cabecalho-principal.darkTheme {
+    background: #305094;
+}
+
 header.cabecalho-principal h1,
 header.cabecalho-principal p {
     color: white;
