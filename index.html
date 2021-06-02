@@ -18,18 +18,19 @@
   <title>Memory Searchs - plataforma de formulários</title>
 </head>
 
-<body class="darkTheme">
-  <header class="cabecalho-principal darkTheme" id="header">
+<body class="light">
+  <header class="cabecalho-principal " id="header">
     <!--CONTEUDO SE ENCONTRA EM: ./scripts/header.js-->
 
-    
+
   </header>
 
 
   <main onclick="options.unselecioned()">
-    <section> <!-- SESSÃO PRINCIPAL: CARDS-->
+    <section>
+      <!-- SESSÃO PRINCIPAL: CARDS-->
       <div class="main-container">
-        <div class="container-choose cadastro dark">
+        <div class="container-choose cadastro ">
           <h2>Ja possui cadastro?</h2>
           <p>É rapidinho! por ele nós podemos deixar a pesquisa mais segura! :)</p>
           <a href="#" onclick="Modal.open()">
@@ -37,7 +38,7 @@
           </a>
         </div>
 
-        <div class="container-choose div-form dark">
+        <div class="container-choose div-form ">
           <h2>Prencha nossos formulários</h2>
           <p>Sua contribuição é muito importante para nos. E o melhor: você preenche rapidinho! ;)</p>
 
@@ -46,52 +47,51 @@
           </a>
         </div>
 
-        <div class="container-choose div-information dark">
+        <div class="container-choose div-information ">
           <h2>Quem somos?</h2>
           <p>Somos um grupo de cientistas de dados que tem a missão de reunir dados acerca da sociedade brasileira. Quer
             saber mais?</p>
 
-          <button class="button-main-container" id="interactive-information-button"  onclick="informations.click()">Clique aqui para mais informações</button>
-            </div>
+          <button class="button-main-container" id="interactive-information-button"
+            onclick="informations.click()">Clique aqui para mais informações</button>
+        </div>
 
-            <div class=" container-choose div-redes dark">
-              <h2>Nos sigam nas redes sociais!</h2>
-              <div class="button-redes">
-                <a href="https://twitter.com">
-                  <img src="https://image.flaticon.com/icons/png/512/124/124021.png" alt="twitter">
-                </a>
+        <div class=" container-choose div-redes ">
+          <h2>Nos sigam nas redes sociais!</h2>
+          <div class="button-redes">
+            <a href="https://twitter.com">
+              <img src="https://image.flaticon.com/icons/png/512/124/124021.png" alt="twitter">
+            </a>
 
-                <a href="https://facebook.com">
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmZydVGB4yDIa71q_SdWCJUYVZ3S7dNwqd7FjdmR2EKQWt5oc7ob9FtBL9MXVFQNw05NU&usqp=CAU"
-                    alt="facebook">
-                </a>
+            <a href="https://facebook.com">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmZydVGB4yDIa71q_SdWCJUYVZ3S7dNwqd7FjdmR2EKQWt5oc7ob9FtBL9MXVFQNw05NU&usqp=CAU"
+                alt="facebook">
+            </a>
 
-                <a href="https://twitter.com">
-                  <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png"
-                    alt="instagram">
-                </a>
+            <a href="https://twitter.com">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png"
+                alt="instagram">
+            </a>
 
-              </div>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="chooseForm">
       <header>
-      <img src="https://image.flaticon.com/icons/png/512/51/51506.png" alt="">
-      <h2>Que tal preencher um dos nosso formulários? ;)</h2>
-    </header>
-    
+        <img src="https://image.flaticon.com/icons/png/512/51/51506.png" alt="">
+        <h2>Que tal preencher um dos nosso formulários? ;)</h2>
+      </header>
+
       <div class="main-div sports">
         <!-- sessão com os botões que levam as pessoas para preencher algum formulário-->
         <a href="#">
           <div class="form-option">
-            <img
-              src="https://cdn.pixabay.com/photo/2013/07/12/15/35/basketball-150145__340.png"
-              alt="basketball icon"
-            />
+            <img src="https://cdn.pixabay.com/photo/2013/07/12/15/35/basketball-150145__340.png"
+              alt="basketball icon" />
 
             <h2>Você pratica atividades físicas regularmente?</h2>
             <p>
@@ -105,10 +105,7 @@
       <div class="main-div tech">
         <a href="./form.html">
           <div class="form-option">
-            <img
-              src="https://cdn.pixabay.com/photo/2018/05/17/00/21/computer-3407491_1280.png"
-              alt=""
-            />
+            <img src="https://cdn.pixabay.com/photo/2018/05/17/00/21/computer-3407491_1280.png" alt="" />
 
             <h2>Conte-nos mais sobre sua rotina com a tecnologia.</h2>
             <p>
@@ -123,10 +120,7 @@
       <div class="main-div polite">
         <a href="#">
           <div class="form-option">
-            <img
-              src="https://image.flaticon.com/icons/png/512/1781/1781225.png"
-              alt="polite icon"
-            />
+            <img src="https://image.flaticon.com/icons/png/512/1781/1781225.png" alt="polite icon" />
 
             <h2>Você se considera uma pessoa de opinião formada?</h2>
             <p>
@@ -139,11 +133,11 @@
     </section>
 
 
-      <!-- sessão onde ficam as informações da empresa-->
-      <section id ="aboutUs" class="aboutUs">
-        <!-- você pode acessar o conteúdo pelo arquivo: homeInformation.js-->
-      </section>
- 
+    <!-- sessão onde ficam as informações da empresa-->
+    <section id="aboutUs" class="aboutUs">
+      <!-- você pode acessar o conteúdo pelo arquivo: homeInformation.js-->
+    </section>
+
   </main>
 
   <!--PARTE INTERATIVA // REGISTRO DE USUÁRIO-->
@@ -151,14 +145,18 @@
 
   </div>
 
- 
+
 
   <!-- onde todos os arquivos JS são linkados-->
   <script src="./scripts/scripts.js"></script>
   <script src="./scripts/homeInformation.js"></script>
   <script src="./scripts/register.js"></script>
   <script src="./scripts/header.js"> </script>
+  <script src="./scripts/darkTheme.js"></script>
 
 </body>
 
 </html>
+
+
+

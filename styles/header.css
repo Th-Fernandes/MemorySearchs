@@ -47,10 +47,20 @@ nav {
     justify-content: space-between;
 }
 
-nav a img {
+nav a img,
+nav button img {
     width: 2.5rem;
     margin: 0 1rem 1rem 1rem;;
 }
+
+nav button {
+    cursor: pointer;
+    
+    background: none;
+    border: none;
+}
+
+
 /* === BOTÃO DE OPÇÕES NO HEADER  ============================================== */
 
 
